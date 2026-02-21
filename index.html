@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless.Radio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Startup Screen -->
+    <div class="startup-screen" id="startupScreen">
+        <div class="startup-content">
+            <!-- Replace 'startup-logo.png' with your logo image -->
+            <img src="z.uselessradiologoblack.png" alt="Loading..." class="startup-logo" id="startupLogo">
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <div class="startup-text">Starting Useless.Radio...</div>
+        </div>
+        <!-- Replace 'startup-sound.mp3' with your startup sound file -->
+        <audio id="startupSound" preload="auto">
+            <source src="startup-sound.mp3" type="audio/mpeg">
+            <source src="startup-sound.wav" type="audio/wav">
+        </audio>
+       
+    </div>
+    <div class="desktop" id="mainDesktop" style="display: none;">
+        <!-- Animated GIF decorations -->
+        <div class="animated-gifs">
+            <img src="z.logogif.gif" alt="" class="desktop-gif desktop-gif-right">
+            <img src="z.logogif.gif" alt="" class="mobile-gif mobile-gif-left">
+            <img src="z.logogif.gif" alt="" class="mobile-gif mobile-gif-right">
+        </div>
+        <!-- Desktop Icons -->
+        <div class="desktop-icons">
+            <div class="icon" data-app="Videos">
+                <!-- CHANGE ICON: Replace "icons/Videos.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.3dgifmaker92253.gif" alt="Videos" class="icon-img">
+                </div>
+                <div class="icon-label">Videos</div>
+            </div>
+            <div class="icon" data-app="Camera Roll">
+                <!-- CHANGE ICON: Replace "icons/forum.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.3dgifmaker06848.gif" alt="Camera Roll" class="icon-img">
+                </div>
+                <div class="icon-label">Camera Roll</div>
+            </div>
+            <div class="icon" data-app="store">
+                <!-- CHANGE ICON: Replace "icons/store.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.3dgifmaker20342.gif" alt="Store" class="icon-img">
+                </div>
+                <div class="icon-label">Store</div>
+            </div>
+            <div class="icon" data-app="tracks">
+                <!-- CHANGE ICON: Replace "icons/tracks.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.tracks.gif" alt="Tracks" class="icon-img">
+                </div>
+                <div class="icon-label">Tracks</div>
+            </div>
+            <div class="icon" data-app="lounge">
+                <!-- CHANGE ICON: Replace "icons/lounge.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.windowsloungeicon.png" alt="Lounge" class="icon-img">
+                </div>
+                <div class="icon-label">Lounge</div>
+            </div>
+            <div class="icon" data-app="contact">
+                <!-- CHANGE ICON: Replace "icons/contact.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.3dgifmaker45616.gif" alt="Contact" class="icon-img">
+                </div>
+                <div class="icon-label">Contact</div>
+            </div>
+            <div class="icon" data-app="forum">
+                <!-- CHANGE ICON: Replace the src below with your own forum icon image, e.g. src="z.forumicon.gif" -->
+                <div class="icon-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23c0c0c0'/%3E%3Crect x='4' y='8' width='42' height='30' rx='3' fill='%23808080'/%3E%3Crect x='5' y='9' width='40' height='28' fill='%23ffffff' stroke='%23ffffff'/%3E%3Crect x='4' y='8' width='42' height='2' fill='%23dfdfdf'/%3E%3Crect x='4' y='8' width='2' height='30' fill='%23dfdfdf'/%3E%3Crect x='9' y='16' width='28' height='3' rx='1' fill='%23000080'/%3E%3Crect x='9' y='22' width='22' height='3' rx='1' fill='%23000080'/%3E%3Crect x='9' y='28' width='18' height='3' rx='1' fill='%23808080'/%3E%3Cpolygon points='10,38 6,52 22,38' fill='%23808080'/%3E%3Cpolygon points='10,38 6,50 20,38' fill='%23ffffff'/%3E%3Crect x='22' y='26' width='36' height='26' rx='3' fill='%23808080'/%3E%3Crect x='23' y='27' width='34' height='24' fill='%23c0c0c0'/%3E%3Crect x='22' y='26' width='36' height='2' fill='%23dfdfdf'/%3E%3Crect x='22' y='26' width='2' height='26' fill='%23dfdfdf'/%3E%3Crect x='27' y='33' width='22' height='2' rx='1' fill='%23000080'/%3E%3Crect x='27' y='38' width='16' height='2' rx='1' fill='%23000080'/%3E%3Cpolygon points='46,52 52,62 36,52' fill='%23808080'/%3E%3Cpolygon points='46,52 51,60 38,52' fill='%23c0c0c0'/%3E%3C/svg%3E"
+                         alt="Forum" class="icon-img">
+                </div>
+                <div class="icon-label">Forum</div>
+            </div>
+            <div class="icon" data-app="about">
+                <!-- CHANGE ICON: Replace "icons/about.png" with your image path -->
+                <div class="icon-image">
+                    <img src="z.windowsabouticon.png" alt="About" class="icon-img">
+                </div>
+                <div class="icon-label">About</div>
+            </div>
+        </div>
+
+        <!-- Mannivirus pixels -->
+        <div class="mannivirus-pixels"></div>
+
+        <!-- Media Player Window for Video - COMPLETELY HIDDEN INITIALLY -->
+        <div class="media-player-window hidden-window draggable resizable" id="window-video" style="display: none; visibility: hidden; opacity: 0; top: 20px; right: 20px; left: auto;">
+            <div class="media-player-header">
+                <div class="media-player-title">📺 Windows Media Player - Music Video</div>
+                <div class="media-player-controls">
+                    <button class="media-btn minimize">_</button>
+                    <button class="media-btn maximize">□</button>
+                    <button class="media-btn close">×</button>
+                </div>
+            </div>
+            <div class="media-player-content">
+                <div class="video-display">
+                    <div id="mainVideoPlayer" class="media-iframe"></div>
+                </div>
+                <div class="media-controls">
+                    <div class="control-buttons">
+                        <button class="control-btn" id="mainPlayPauseBtn">⏸</button>
+                        <button class="control-btn" id="mainStopBtn">⏹</button>
+                        <button class="control-btn" id="mainPrevBtn">⏮</button>
+                        <button class="control-btn" id="mainNextBtn">⏭</button>
+                    </div>
+                    <div class="progress-section">
+                        <span class="time-display">--:--</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                            <input type="range" class="progress-slider" min="0" max="100" value="0" disabled>
+                        </div>
+                        <span class="time-display">--:--</span>
+                    </div>
+                    <div class="volume-section">
+                        <button class="control-btn" id="mainMuteBtn">🔇</button>
+                    </div>
+                </div>
+                <div class="media-info">
+                    <div class="now-playing">Now Playing: Music Video</div>
+                    <div class="media-status">Ready</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos Media Player Window -->
+        <div class="media-player-window draggable resizable" id="window-Videos" style="display: none;">
+            <div class="media-player-header">
+                <div class="media-player-title">📹 Windows Media Player - Videos</div>
+                <div class="media-player-controls">
+                    <button class="media-btn minimize">_</button>
+                    <button class="media-btn maximize">□</button>
+                    <button class="media-btn close">×</button>
+                </div>
+            </div>
+            <div class="media-player-content">
+                <div class="playlist-section">
+                    <div class="playlist-header">Playlist</div>
+                    <div class="playlist-controls">
+                        <button class="playlist-btn" id="prevVideoBtn">◀ Previous</button>
+                        <span class="playlist-counter" id="playlistCounter">1 / 5</span>
+                        <button class="playlist-btn" id="nextVideoBtn">Next ▶</button>
+                    </div>
+                    <select class="video-selector" id="videoselector">
+                        <option value="0">Video 1 - Die Good Vol1 Release Party</option>
+                        <option value="1">Video 2 - LILSCRRT Interview</option>
+                        <option value="2">Video 3 - SPRAYGROUNDS BOOKBAGS & ATL</option>
+                        <option value="3">Video 4 - In the Woods w/ Tony Snow</option>
+                        <option value="4">Video 5 - Die Good Vol 2: Commercial</option>
+                        <option value="5">Video 6 - 2046 Soul Train feat. B6 and C12</option>
+                    </select>
+                </div>
+                <div class="video-display">
+                    <div id="VideosVideoPlayer" class="media-iframe"></div>
+                </div>
+                <div class="media-controls">
+                    <div class="control-buttons">
+                        <button class="control-btn" id="VideosPlayPauseBtn">▶</button>
+                        <button class="control-btn" id="VideosStopBtn">⏹</button>
+                        <button class="control-btn" id="VideosPrevBtn">⏮</button>
+                        <button class="control-btn" id="VideosNextBtn">⏭</button>
+                    </div>
+                    <div class="progress-section">
+                        <span class="time-display">--:--</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                            <input type="range" class="progress-slider" min="0" max="100" value="0" disabled>
+                        </div>
+                        <span class="time-display">--:--</span>
+                    </div>
+                    <div class="volume-section">
+                        <button class="control-btn" id="VideosMuteBtn">🔇</button>
+                    </div>
+                </div>
+                <div class="media-info">
+                    <div class="now-playing" id="VideosNowPlaying">Now Playing: Main Reel</div>
+                    <div class="media-status">Ready</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window draggable resizable" id="window-store" style="display: none;">
+            <div class="window-header">
+                <div class="window-title">🛒 Store</div>
+                <div class="window-controls">
+                    <button class="window-btn minimize">_</button>
+                    <button class="window-btn maximize">□</button>
+                    <button class="window-btn close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <iframe class="web-iframe" src="https://uselessradio.com/store/" title="Store Website"></iframe>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="taskbar-left">
+                <button class="start-button" id="startBtn">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z'/%3E%3C/svg%3E" alt="Start" class="start-icon">
+                    Start
+                </button>
+                
+                <!-- Personal Icons - CHANGE THESE: Replace image paths with your own -->
+                <div class="personal-icons">
+                    <div class="personal-icon" data-app="Swampfoot" data-tooltip="Swampfoot">
+                        <img src="z.swampfoot.png" alt="Swampfoot" class="personal-icon-img">
+                    </div>
+                    <div class="personal-icon" data-app="Owen-Givens" data-tooltip="Owen-Givens">
+                        <img src="z.owen2.png" alt="Owen-Givens" class="personal-icon-img">
+                    </div>
+                    <div class="personal-icon" data-app="Mannisupreme" data-tooltip="ManniSupreme">
+                        <img src="z.manihead.png" alt="ManniSupreme" class="personal-icon-img">
+                    </div>
+                    <div class="personal-icon" data-app="Jordan-walker" data-tooltip="Jordan Walker">
+                        <img src="z.jordan head.png" alt="Jordan Walker" class="personal-icon-img">
+                    </div>
+                </div>
+                
+                <div class="taskbar-apps" id="taskbarApps">
+                    <!-- Taskbar apps will be dynamically added here -->
+                </div>
+            </div>
+            <div class="taskbar-right">
+                <!-- Auth icon: left of battery/signal/sound/time — hidden on mobile via CSS -->
+                <button class="auth-taskbar-btn" id="authTaskbarBtn" title="Sign In">👤</button>
+                <div class="system-tray">
+                    <div class="tray-icons">🔊 📶 🔋</div>
+                    <div class="clock" id="clock">12:00 PM</div>
+                </div>
+                <div class="next-drop">
+                    <div class="next-label">Next Drop</div>
+                    <div class="next-date" id="nextDate">9.26.2025</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Menu -->
+        <div class="start-menu" id="startMenu" style="display: none;">
+            <div class="start-menu-header">
+                <div class="start-menu-user">
+                    <div class="user-icon">👤</div>
+                    <div class="user-name">User</div>
+                </div>
+            </div>
+            <div class="start-menu-items">
+                <div class="start-menu-item" data-app="Videos">
+                    <div class="menu-icon">📹</div>
+                    <span>Videos</span>
+                </div>
+                <div class="start-menu-item" data-app="forum">
+                    <div class="menu-icon">💬</div>
+                    <span>Forum</span>
+                </div>
+                <div class="start-menu-item" data-app="store">
+                    <div class="menu-icon">🛒</div>
+                    <span>Store</span>
+                </div>
+                <div class="start-menu-item" data-app="tracks">
+                    <div class="menu-icon">💿</div>
+                    <span>Tracks</span>
+                </div>
+                <div class="start-menu-item" data-app="lounge">
+                    <div class="menu-icon">🎵</div>
+                    <span>Lounge</span>
+                </div>
+                <hr class="menu-separator">
+                <!-- Sign In item: above Settings — primary auth entry on mobile -->
+                <div class="start-menu-item" id="startMenuAuthBtn">
+                    <div class="menu-icon">👤</div>
+                    <span id="startMenuAuthText">Sign In</span>
+                </div>
+                <div class="start-menu-item" id="settingsMenuBtn">
+                    <div class="menu-icon">⚙️</div>
+                    <span>Settings</span>
+                </div>
+                <div class="start-menu-item">
+                    <div class="menu-icon">🔌</div>
+                    <span>Shut Down...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile / Settings Modal -->
+    <div class="auth-modal-overlay" id="profileModal" style="display: none;">
+        <div class="auth-modal">
+            <div class="auth-modal-header">
+                <span class="auth-modal-title">⚙️ Settings</span>
+                <button class="auth-modal-close" id="profileModalClose">✕</button>
+            </div>
+            <div class="auth-modal-body" id="profileModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Supabase JS client (UMD build — exposes window.supabase) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+    <script>
+    // Fallback: if launchStartupVideo didn't fire within 12s, force it
+    setTimeout(function(){
+        if (!document.getElementById('sv-popup') && typeof launchStartupVideo === 'function') {
+            try { launchStartupVideo(); } catch(e) { console.error('Fallback startup video error:', e); }
+        }
+    }, 12000);
+    </script>
+</body>
+</html>
